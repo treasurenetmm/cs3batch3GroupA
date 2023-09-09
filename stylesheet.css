@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding: 7% 35%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(img/sibg.jpg);
+    background-size: 100%;
+    background-color: #000;
+    background-position: center;
+}
+
+.container{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    width: 400px;
+    height: 550px;
+    transform: translate();
+}
+
+.container h2{
+    color: white;
+    margin: 10px 20px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.container form{
+    margin: 25px 0 65px;
+}
+
+.form-control{
+    position: relative;
+    height: 60px;
+    margin: 20px;
+}
+
+.form-control input{
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    outline: none;
+    border-color: white;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.9rem;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.form-control input:is(:focus, :valid) {
+    padding-left: 20px;
+    background: #333;
+}
+
+.form-control label{
+    position: absolute;
+    left: 20px;
+    top: 47%;
+    color: #fff;
+    transform: translateY(-50%);
+    transition: all 0.1s ease;
+    pointer-events: none;
+}
+
+.form-control input:is(:focus, :valid) ~ label {
+    font-size: 0.75rem;
+    transform: translateY(-170%);
+}
+
+form button{
+    position: relative;
+    margin: 5px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: red;
+    color: white;
+    height: 40px;
+    align-items: center;
+    font-size: 1rem;
+    width: 89%;
+}
+
+form button:hover{
+    background: #c40812;
+}
+
+.help{
+    display: flex;
+    padding: 20px;
+}
+
+form .remember-me input{
+    margin-right: 5px;
+    accent-color: white;
+}
+
+.a1{
+    float: right;
+    display: block;
+    padding-left: 20px;
+}
+
+.a2{
+    float: left;
+    display: block;
+    padding-left: 100px;
+}
+
+form .help :where(label, a){
+    font-size: 0.9rem;
+}
+
+.container :where(label, p, small, a){
+    color: #b3b3b3;
+}
+
+p{
+    padding: 0 20px;
+}
+
+small{
+    padding: 0 20px;
+}
+
+.container p a{
+    color: #fff;
+}
+
+.container small{
+    display: block;
+    margin-top: 15px;
+}
+
+.container small a{
+    color: #0071eb;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.container a:hover{
+    text-decoration: underline;
+}
+
+
+
